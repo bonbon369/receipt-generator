@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post-Quantum Receipt Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Post-Quantum Receipt Generator</h1>
+  <p>🔏 Enter your declaration or signed message below:</p>
+
+  <textarea id="messageInput" placeholder="Enter message or signed declaration..."></textarea>
+  <input type="text" id="linkInput" placeholder="Optional: Arweave or IPFS link..." />
+  <input type="text" id="previousTxInput" placeholder="Optional: Previous/Master TxID..." />
+  <button onclick="generateHash()">Generate SHA-256 Receipt</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
